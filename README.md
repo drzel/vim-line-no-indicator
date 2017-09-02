@@ -29,8 +29,9 @@ let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
 
 Some other examples:
 ```vim
-let g:line_no_indicator_chars = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
-let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓ ', '██']
+let g:line_no_indicator_chars = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
+let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓', '██']
+ 
 ```
 
 ## Before and after
