@@ -12,7 +12,7 @@ Install with a plugin manager.
 
 ## Usage
 
-Add `%{LineNoIndicator()}` to your statusline.  See :help 'statusline' for more information about doing this.
+Add `%{LineNoIndicator()}` to your statusline.  See `:help 'statusline'` for more information about doing this.
 
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my configuration looks like this:
 
