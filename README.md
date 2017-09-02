@@ -23,8 +23,14 @@ let g:airline_section_z = '%{LineNoIndicator()} :%2c'
 ## Configuration
 
 ```vim
-" Default indicator, can be any number of elements
+" Default
 let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
+```
+
+Some other examples:
+```vim
+let g:line_no_indicator_chars = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
+let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓ ', '██']
 ```
 
 ## Before and after
