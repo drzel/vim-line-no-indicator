@@ -4,7 +4,7 @@ Show a one-char wide, simple and expressive line number indicator.
 
 ## Why?
 
-I have line numbers displayed when editing code, so I already know what line number I'm on. I just need something to show me roughly how far through the document I am, without taking up 4+ characters in my statusline.
+I have line numbers displayed (`set number`) when editing code, so I already know what line number I'm on. I just need something to show me roughly how far through the document I am, without taking up 4+ characters in my statusline.
 
 ## Installation
 
@@ -26,3 +26,11 @@ let g:airline_section_z = '%{LineNoIndicator()} :%2c'
 " Default indicator, can be any number of elements
 let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
 ```
+
+## Before and after
+
+Before:
+![Before](https://imgur.com/uzfI76T)
+
+After:
+![After](https://imgur.com/2qy4cOX)
