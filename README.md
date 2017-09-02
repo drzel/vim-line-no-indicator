@@ -30,7 +30,7 @@ let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
 ## Before and after
 
 Before:
-![Before](https://imgur.com/uzfI76T)
+![Before](https://i.imgur.com/uzfI76T.png)
 
 After:
-![After](https://imgur.com/2qy4cOX)
+![After](https://i.imgur.com/2qy4cOX.png)
