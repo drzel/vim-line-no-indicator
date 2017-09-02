@@ -39,7 +39,7 @@ let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '�
 ## Before and after
 
 Before:
-![Before](https://i.imgur.com/uzfI76T.png)
+![Before](https://imgur.com/I2uK4lp.png)
 
 After:
-![After](https://i.imgur.com/2qy4cOX.png)
+![After](https://imgur.com/RcXwKoN.png)
