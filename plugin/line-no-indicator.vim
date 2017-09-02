@@ -2,11 +2,11 @@
 " Author: Sheldon Johnson
 " Version: 0.1
 
-if exists("g:loaded_pluginname") || &cp
+if exists("g:loaded_line_no_indicator") || &cp
   finish
 endif
 
-let g:loaded_pluginname = 1
+let g:loaded_line_no_indicator = 1
 
 if !exists("g:line_no_indicator_chars")
   let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
