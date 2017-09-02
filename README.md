@@ -2,6 +2,8 @@
 
 Show a one-char wide, simple and expressive line number indicator.
 
+![vim-line-no-indicator-small](https://i.imgur.com/iquF7t9.gif)
+
 ## Why?
 
 I have line numbers displayed (`set number`) when editing code, so I already know what line number I'm on. I just need something to show me roughly how far through the document I am, without taking up 4+ characters in my statusline.
