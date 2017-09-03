@@ -1,6 +1,6 @@
 " vim-line-no-indicator
 " Author: Sheldon Johnson
-" Version: 0.1
+" Version: 0.2
 
 if exists("g:loaded_line_no_indicator") || &cp
   finish
