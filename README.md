@@ -24,7 +24,7 @@ See `:help 'statusline'` for more information about doing this.
 
 ### vim-airline
 
-I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my configuration looks like this:
+I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my settings look like this:
 
 ```vim
 let g:airline_section_y = '%{LineNoIndicator()}'
@@ -47,13 +47,13 @@ let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '�
 
 ## Before and after
 
-Before with default vim-airline statuline:
+Before with default vim-airline statusline:
 ![Before](https://imgur.com/eGutHNT.png)
 
-After with airline settings as above:
+After with vim-line-no-indicator and vim-airline settings as above:
 ![After](https://imgur.com/ABNW2sP.png)
 
-Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font, [nord](https://github.com/arcticicestudio/nord-vim) colorscheme and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
+Screenshots in [Tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font, [nord](https://github.com/arcticicestudio/nord-vim) colorscheme and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
 
 ## What people are saying about vim-line-no-indicator
 
