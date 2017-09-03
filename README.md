@@ -2,7 +2,7 @@
 
 Show a one-char wide, simple and expressive line number indicator.
 
-![vim-line-no-indicator-small](https://i.imgur.com/iquF7t9.gif)
+![vim-line-no-indicator-small](https://imgur.com/36mmVdI.gif)
 
 ## Why?
 
@@ -47,9 +47,9 @@ let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '�
 ## Before and after
 
 Before:
-![Before](https://imgur.com/I2uK4lp.png)
+![Before](https://imgur.com/iy5v6KD.png)
 
 After:
-![After](https://imgur.com/RcXwKoN.png)
+![After](https://imgur.com/FZOMzQI.png)
 
-Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with font [roboto mono](https://fonts.google.com/specimen/Roboto+Mono).
+Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
