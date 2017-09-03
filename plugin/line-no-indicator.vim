@@ -13,10 +13,11 @@ if !exists("g:line_no_indicator_chars")
 end
 
 function! LineNoIndicator()
-  let l:current_line = line(".")
-  let l:total_lines = line("$")
+  " Zero indexed so line 2/3 becomes 1/2 == 50%
+  let l:current_line = line(".") - 1
+  let l:total_lines = line("$") - 1
 
-  if l:current_line == 1
+  if l:current_line == 0
     return g:line_no_indicator_chars[0]
   elseif l:current_line == l:total_lines
     return g:line_no_indicator_chars[-1]
