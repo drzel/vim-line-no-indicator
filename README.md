@@ -27,7 +27,8 @@ See `:help 'statusline'` for more information about doing this.
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my configuration looks like this:
 
 ```vim
-let g:airline_section_z = '%{LineNoIndicator()} :%2c'
+let g:airline_section_y = '%{LineNoIndicator()}'
+let g:airline_section_z = '%2c'
 ```
 
 ## Configuration
@@ -50,6 +51,6 @@ Before:
 ![Before](https://imgur.com/iy5v6KD.png)
 
 After:
-![After](https://imgur.com/FZOMzQI.png)
+![After](https://imgur.com/sM3T1At.png)
 
 Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
