@@ -14,7 +14,15 @@ Install with a plugin manager.
 
 ## Usage
 
-Add `%{LineNoIndicator()}` to your statusline.  See `:help 'statusline'` for more information about doing this.
+Add `%{LineNoIndicator()}` to your statusline. For example:
+
+```vim
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{LineNoIndicator()}
+```
+
+See `:help 'statusline'` for more information about doing this.
+
+### vim-airline
 
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my configuration looks like this:
 
@@ -43,3 +51,5 @@ Before:
 
 After:
 ![After](https://imgur.com/RcXwKoN.png)
+
+Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with font [roboto mono](https://fonts.google.com/specimen/Roboto+Mono).
