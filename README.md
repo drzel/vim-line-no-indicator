@@ -58,11 +58,10 @@ Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](ht
 ## What people are saying about vim-line-no-indicator
 
 > Cool. I used [noscrollbar](https://github.com/gcavallanti/vim-noscrollbar) for a long time, but sometimes wished for this approach instead.
-> - [justinmk](https://github.com/justinmk)
+> -[justinmk](https://github.com/justinmk)
 
 > I don't think it's of any use
-> - [romainl](https://github.com/romainl)
+> -[romainl](https://github.com/romainl)
 
 > It's crap
-> - [andlrc](https://github.com/andlrc) a.k.a. someone on the internet
-
+> -[andlrc](https://github.com/andlrc) a.k.a. someone on the internet
