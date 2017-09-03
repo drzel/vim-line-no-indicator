@@ -48,9 +48,9 @@ let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '�
 ## Before and after
 
 Before:
-![Before](https://imgur.com/iy5v6KD.png)
+![Before](https://imgur.com/eGutHNT.png)
 
 After:
-![After](https://imgur.com/sM3T1At.png)
+![After](https://imgur.com/ABNW2sP.png)
 
 Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
