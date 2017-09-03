@@ -47,10 +47,22 @@ let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '�
 
 ## Before and after
 
-Before:
+Before with default vim-airline statuline:
 ![Before](https://imgur.com/eGutHNT.png)
 
-After:
+After with airline settings as above:
 ![After](https://imgur.com/ABNW2sP.png)
 
-Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
+Screenshots in [tilix](https://gnunn1.github.io/tilix-web/), running [neovim](https://neovim.io/) with [roboto mono](https://fonts.google.com/specimen/Roboto+Mono) font, [nord](https://github.com/arcticicestudio/nord-vim) colorscheme and [vim-airline](https://github.com/vim-airline/vim-airline) statusline.
+
+## What people are saying about vim-line-no-indicator
+
+> Cool. I used [noscrollbar](https://github.com/gcavallanti/vim-noscrollbar) for a long time, but sometimes wished for this approach instead.
+> - [justinmk](https://github.com/justinmk)
+
+> I don't think it's of any use
+> - [romainl](https://github.com/romainl)
+
+> It's crap
+> - [andlrc](https://github.com/andlrc) a.k.a. someone on the internet
+
