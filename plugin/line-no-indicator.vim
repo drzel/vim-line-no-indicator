@@ -9,7 +9,8 @@ endif
 let g:loaded_line_no_indicator = 1
 
 if !exists("g:line_no_indicator_chars")
-  let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎼', '⎽']
+  let g:line_no_indicator_chars = ['⎺', '⎻','─', '⎼', '⎽']
+
 end
 
 function! LineNoIndicator()
