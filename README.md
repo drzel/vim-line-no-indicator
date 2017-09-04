@@ -4,13 +4,16 @@ Show a one-char wide, simple and expressive line number indicator.
 
 ![vim-line-no-indicator-small](https://imgur.com/36mmVdI.gif)
 
+
 ## Why?
 
 I have line numbers displayed (`set number`) when editing code, so I already know what line number I'm on. I just need something to show me roughly how far through the document I am, without taking up 4+ characters in my statusline.
 
+
 ## Installation
 
 Install with a plugin manager.
+
 
 ## Usage
 
@@ -22,6 +25,7 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{LineNoIndicator()}
 
 See `:help 'statusline'` for more information about doing this.
 
+
 ### vim-airline
 
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my settings look like this:
@@ -31,12 +35,17 @@ let g:airline_section_y = '%{LineNoIndicator()}'
 let g:airline_section_z = '%2c'
 ```
 
+
 ## Configuration
 
 ```vim
-" Default
-let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
+" Defaults
+let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽'] " on macOS
+let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯'] " on Linux
 ```
+
+The chars above look different between my mac and ubuntu machines, so the above are the respective defaults. If neither of these are right for you, [create an issue](https://github.com/drzel/vim-line-no-indicator/issues/new).
+
 
 Some other examples:
 ```vim
@@ -44,6 +53,7 @@ let g:line_no_indicator_chars = [' ', '▁', '▂', '▃', '▄', '▅', '▆',
 let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓', '██']
  
 ```
+
 
 ## Before and after
 
@@ -62,6 +72,3 @@ Screenshots in [Tilix](https://gnunn1.github.io/tilix-web/), running [neovim](ht
 
 [romainl](https://github.com/romainl):
 > I don't think it's of any use.
-
-[andlrc](https://github.com/andlrc) a.k.a. someone on the internet:
-> It's crap.

@@ -1,6 +1,6 @@
 " vim-line-no-indicator
 " Author: Sheldon Johnson
-" Version: 0.2
+" Version: 0.3
 
 if exists("g:loaded_line_no_indicator") || &cp
   finish
@@ -9,7 +9,11 @@ endif
 let g:loaded_line_no_indicator = 1
 
 if !exists("g:line_no_indicator_chars")
-  let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
+  if has('macunix')
+    let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽']
+  else
+    let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
+  end
 end
 
 function! LineNoIndicator()
