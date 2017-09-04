@@ -38,16 +38,15 @@ let g:airline_section_z = '%2c'
 
 ## Configuration
 
+By default vim-line-no-indicator will use the following characters:
+
 ```vim
-" Defaults
-let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽'] " on macOS
-let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯'] " on Linux
+" Default
+let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎼', '⎽']
 ```
 
-The chars above look different between my mac and ubuntu machines, so the above are the respective defaults. If neither of these are right for you, [create an issue](https://github.com/drzel/vim-line-no-indicator/issues/new).
+Some more options:
 
-
-Some other examples:
 ```vim
 let g:line_no_indicator_chars = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
 let g:line_no_indicator_chars = ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓', '██']

@@ -9,11 +9,7 @@ endif
 let g:loaded_line_no_indicator = 1
 
 if !exists("g:line_no_indicator_chars")
-  if has('macunix')
-    let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽']
-  else
-    let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯']
-  end
+  let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎼', '⎽']
 end
 
 function! LineNoIndicator()
