@@ -1,14 +1,15 @@
+scriptencoding utf-8
 " vim-line-no-indicator
 " Author: Sheldon Johnson
 " Version: 0.3
 
-if exists("g:loaded_line_no_indicator") || &cp
+if exists('g:loaded_line_no_indicator') || &compatible
   finish
 endif
 
 let g:loaded_line_no_indicator = 1
 
-if !exists("g:line_no_indicator_chars")
+if !exists('g:line_no_indicator_chars')
   if has('macunix')
     let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽']
   else
@@ -18,8 +19,8 @@ end
 
 function! LineNoIndicator()
   " Zero indexed so line 2/3 becomes 1/2 == 50%
-  let l:current_line = line(".") - 1
-  let l:total_lines = line("$") - 1
+  let l:current_line = line('.') - 1
+  let l:total_lines = line('$') - 1
 
   if l:current_line == 0
     let l:index = 0
