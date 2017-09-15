@@ -31,7 +31,8 @@ See `:help 'statusline'` for more information about doing this.
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my settings look like this:
 
 ```vim
-let g:airline_section_y = '%{LineNoIndicator()}'
+let g:airline_section_x = '%{&filetype}'
+let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
 let g:airline_section_z = '%2c'
 ```
 
@@ -44,7 +45,7 @@ let g:line_no_indicator_chars = ['⎺', '⎻', '─', '⎼', '⎽'] " on macOS
 let g:line_no_indicator_chars = ['⎺', '⎻', '⎼', '⎽', '⎯'] " on Linux
 ```
 
-The chars above look different between my mac and ubuntu machines, so the above are the respective defaults. If neither of these are right for you, [create an issue](https://github.com/drzel/vim-line-no-indicator/issues/new).
+The chars above look different between my Mac and Ubuntu machines for some reason, so the above are the respective defaults. If neither of these are right for you, [create an issue](https://github.com/drzel/vim-line-no-indicator/issues/new).
 
 
 Some other examples:
