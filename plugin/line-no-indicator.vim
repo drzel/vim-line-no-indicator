@@ -18,8 +18,8 @@ if !exists('g:line_no_indicator_chars')
   end
 end
 
-function! LineNoIndicator()
-  " Zero indexed so line 2/3 becomes 1/2 == 50%
+function! LineNoIndicator() abort
+  " Zero index line number so 1/3 = 0, 2/3 = 0.5, and 3/3 = 1
   let l:current_line = line('.') - 1
   let l:total_lines = line('$') - 1
 
