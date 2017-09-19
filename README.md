@@ -35,7 +35,7 @@ settings look like this:
 
 ```vim
 let g:airline_section_x = '%{&filetype}'
-let g:airline_section_y = '|%#__accent_bold#%{LineNoIndicator()}%#__restore__#|'
+let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
 let g:airline_section_z = '%2c'
 ```
 
@@ -66,7 +66,6 @@ let g:line_no_indicator_chars = [
   \ ]
 
 " three char wide solid horizontal bar
-
 let g:line_no_indicator_chars = [
   \ '   ', '▏  ', '▎  ', '▍  ', '▌  ',
   \ '▋  ', '▊  ', '▉  ', '█  ', '█▏ ',
