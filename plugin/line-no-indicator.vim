@@ -1,4 +1,5 @@
 scriptencoding utf-8
+
 " vim-line-no-indicator
 " Author: Sheldon Johnson
 " Version: 0.3

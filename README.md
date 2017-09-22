@@ -31,7 +31,7 @@ See `:help 'statusline'` for more information about doing this.
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my settings look like this:
 
 ```vim
-let g:airline_section_y = '%{LineNoIndicator()}'
+let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
 let g:airline_section_z = '%2c'
 ```
 
