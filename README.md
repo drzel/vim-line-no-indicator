@@ -39,6 +39,28 @@ let g:airline_section_y = '%#__accent_bold#%{LineNoIndicator()}%#__restore__#'
 let g:airline_section_z = '%2c'
 ```
 
+### lightline
+
+Integration with [lightline](https://github.com/itchyny/lightline.vim)
+
+1. Add function:
+
+```viml
+let g:lightline.component_function = {
+        \ 'line_no_indicator': 'LineNoIndicator',
+        \ }
+```
+
+2. Add the components to the lightline:
+
+```viml
+let g:lightline.active = {
+\ 'right': [
+\   ['line_no_indicator],
+\	  ['fileformat', 'fileencoding', 'filetype']
+\ ]}
+```
+
 
 ## Configuration
 
