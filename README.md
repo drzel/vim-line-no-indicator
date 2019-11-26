@@ -28,6 +28,39 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{LineNoIndicator()}
 See `:help 'statusline'` for more information about doing this.
 
 
+### vim-lightline
+
+I use [vim-lightline](https://github.com/itchyny/lightline.vim). My settings
+look like this:
+
+```vim
+let g:lightline.component = {
+      \   'indicator': '%{LineNoIndicator()}'
+      \ }
+
+let g:lightline.active = {
+      \   'left': [
+      \     [ 'mode', 'paste' ],
+      \     [ 'readonly', 'relativepath', 'modified' ]
+      \   ],
+      \   'right': [
+      \     [ 'indicator' ],
+      \     [ 'lineinfo' ]
+      \   ]
+      \ }
+
+let g:lightline.inactive = {
+      \   'left': [
+      \     [ 'filename' ]
+      \   ],
+      \   'right': [
+      \     [ 'indicator' ],
+      \     [ 'lineinfo' ]
+      \   ]
+      \ }
+```
+
+
 ### vim-airline
 
 I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my
