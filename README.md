@@ -63,8 +63,8 @@ let g:lightline.inactive = {
 
 ### vim-airline
 
-I use [vim-airline](https://github.com/vim-airline/vim-airline/), so my
-settings look like this:
+I used to use [vim-airline](https://github.com/vim-airline/vim-airline/). My
+settings looked like this:
 
 ```vim
 let g:airline_section_x = '%{&filetype}'
