@@ -89,49 +89,31 @@ Some alternatives:
 
 ```vim
 " one char wide solid vertical bar
-let g:line_no_indicator_chars = [
-  \  ' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'
-  \  ]
+let g:line_no_indicator_chars =
+  \ [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█']
 
 " two char wide fade-in blocks
-let g:line_no_indicator_chars = [
-  \ '  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓', '██'
-  \ ]
+let g:line_no_indicator_chars =
+  \ ['  ', '░ ', '▒ ', '▓ ', '█ ', '█░', '█▒', '█▓', '██']
 
 " three char wide solid horizontal bar
-let g:line_no_indicator_chars = [
-  \ '   ', '▏  ', '▎  ', '▍  ', '▌  ',
-  \ '▋  ', '▊  ', '▉  ', '█  ', '█▏ ',
-  \ '█▎ ', '█▍ ', '█▌ ', '█▋ ', '█▊ ',
-  \ '█▉ ', '██ ', '██▏', '██▎', '██▍',
-  \ '██▌', '██▋', '██▊', '██▉', '███'
+let g:line_no_indicator_chars =
+  \ [ '   ', '▏  ', '▎  ', '▍  ', '▌  '
+  \ , '▋  ', '▊  ', '▉  ', '█  ', '█▏ '
+  \ , '█▎ ', '█▍ ', '█▌ ', '█▋ ', '█▊ '
+  \ , '█▉ ', '██ ', '██▏', '██▎', '██▍'
+  \ , '██▌', '██▋', '██▊', '██▉', '███'
   \ ]
 
-" takes char sequence list and a number of how many times you want to repeat it
-fu! s:repeat_bar(bar_char_seq, repeat_n_times, ...)
-  let l:n = get(a:, 1, 0)
-  let l:single_len = len(a:bar_char_seq)
-  if l:n > l:single_len * a:repeat_n_times | retu [] | en
-  let l:x = ''
-  for l:i in range(a:repeat_n_times, 1, -1)
-    let l:idx = max([0, (l:single_len * l:i) - l:n])
-    let l:idx = min([l:single_len - 1, l:idx])
-    let l:x .= a:bar_char_seq[l:idx]
-  endfo
-  retu add(s:repeat_bar(a:bar_char_seq, a:repeat_n_times, l:n + 1), l:x)
-endf
-
-" six char wide solid horizontal bar (from '      ' to '██████')
-" (replace 6 with 3 to get that three char wide bar shown above)
-let g:line_no_indicator_chars = s:repeat_bar(
-  \ [' ', '▏', '▎', '▍', '▌', '▋', '▊', '▉', '█'],
-  \ 6
-  \ )
+" the same three char wide solid horizontal bar as above
+let g:line_no_indicator_bar_repeats = 3
+let g:line_no_indicator_chars = [' ', '▏', '▎', '▍', '▌', '▋', '▊', '▉', '█']
 
 " from 9 spaces ('         ') to 9 dots ('.........')
-let g:line_no_indicator_chars = s:repeat_bar(['   ', '.  ', '.. ', '...'], 3)
-
+let g:line_no_indicator_bar_repeats = 3
+let g:line_no_indicator_chars = ['   ', '.  ', '.. ', '...']
 ```
+
 Note: The above chars might look a little janky in your browser, but probably
 render okay in your terminal.
 

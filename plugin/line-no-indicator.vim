@@ -18,19 +18,25 @@ if !exists('g:line_no_indicator_chars')
   end
 end
 
+if !exists('g:line_no_indicator_bar_repeats')
+  let g:line_no_indicator_bar_repeats = 1
+en
+
 function! LineNoIndicator() abort
   " Zero index line number so 1/3 = 0, 2/3 = 0.5, and 3/3 = 1
   let l:current_line = line('.') - 1
   let l:total_lines = line('$') - 1
+  let l:single_len = len(g:line_no_indicator_chars) - 1
+  let l:result = ''
 
-  if l:current_line == 0
-    let l:index = 0
-  elseif l:current_line == l:total_lines
-    let l:index = -1
-  else
+  for l:i in range(g:line_no_indicator_bar_repeats)
     let l:line_no_fraction = floor(l:current_line) / floor(l:total_lines)
-    let l:index = float2nr(l:line_no_fraction * len(g:line_no_indicator_chars))
-  endif
+    let l:line_no_fraction *= g:line_no_indicator_bar_repeats
+    let l:line_no_fraction -= l:i
+    let l:index = float2nr(l:line_no_fraction * l:single_len)
+    let l:index = min([l:single_len, max([0, l:index])])
+    let l:result .= g:line_no_indicator_chars[l:index]
+  endfor
 
-  return g:line_no_indicator_chars[l:index]
+  return l:result
 endfunction
