@@ -30,12 +30,19 @@ function! LineNoIndicator() abort
   let l:result = ''
 
   for l:i in range(g:line_no_indicator_bar_repeats)
-    let l:line_no_fraction = floor(l:current_line) / floor(l:total_lines)
-    let l:line_no_fraction *= g:line_no_indicator_bar_repeats
-    let l:line_no_fraction -= l:i
-    let l:index = float2nr(l:line_no_fraction * l:single_len)
-    let l:index = min([l:single_len, max([0, l:index])])
-    let l:result .= g:line_no_indicator_chars[l:index]
+    let l:line_no_fraction =
+      \ ( floor(l:current_line)
+      \ / floor(l:total_lines)
+      \ * g:line_no_indicator_bar_repeats
+      \ ) - l:i
+
+    let l:index =
+      \ min([l:single_len,
+      \ max([0,
+      \ float2nr(l:line_no_fraction * l:single_len)
+      \ ])])
+
+    let l:result = l:result . g:line_no_indicator_chars[l:index]
   endfor
 
   return l:result
