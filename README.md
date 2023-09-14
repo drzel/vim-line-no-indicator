@@ -73,6 +73,22 @@ let g:airline_section_z = '%2c'
 ```
 
 
+### lualine.nvim
+
+Users of [Lualine](https://github.com/nvim-lualine/lualine.nvim) can simply add `'LineNoIndicator'` in the proper section. For example, one can replace the default
+
+```lua
+lualine_y = {'progress'},
+```
+
+within the `sections` part of the setup with
+```lua
+lualine_y = {'LineNoIndicator'},
+```
+
+For more information, see [Lualine’s documentation](https://github.com/nvim-lualine/lualine.nvim#usage-and-customization).
+
+
 ## Configuration
 
 ```vim
